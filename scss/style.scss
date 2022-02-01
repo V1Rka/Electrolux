@@ -1,0 +1,50 @@
+:root {
+	--def-color: #041e41;
+	--sec-color: #f3f5f7;
+	--white-color: #fff;
+	--container: 1200px;
+	--container-sm: 950px;
+	--font-light: "Electrolux Sans C";
+	--font-regular: "Electrolux Sans C Regular";
+	--font-semibold: "Electrolux Sans C SemBold";
+	--fz-big: calc(22px + 16 * (100vw / 1400));
+	--fz-standart: calc(20px + 2 * (100vw / 1400));
+	--fz-small: calc(16px + 0 * (100vw / 1400));
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--white-color);
+	overflow-x: hidden;
+	color: var(--def-color);
+	font-family: var(--font-regular);
+	font-size: var(--fz-small);
+}
+
+.container {
+	max-width: var(--container);
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container-sm {
+	max-width: var(--container-sm);
+	width: 100%;
+	margin: 0 auto;
+}
+
+section {
+	padding: 0 15px;
+}
+
+@import "_head";
+@import "_top-banner";
+@import "_information-block";
+@import "_advantages";
+@import "_two-banner";
+@import "_wi-fi";
+@import "_bottom-banner";
+@import "_footer";
+@import "_media";
